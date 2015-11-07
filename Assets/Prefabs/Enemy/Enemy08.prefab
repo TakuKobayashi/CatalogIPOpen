@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11446264}
   - 65: {fileID: 6520008}
   m_Layer: 0
-  m_Name: Pacman_Ghost_0
+  m_Name: Enemy08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

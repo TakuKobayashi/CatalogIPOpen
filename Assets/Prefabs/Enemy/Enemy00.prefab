@@ -13,7 +13,7 @@ GameObject:
   - 65: {fileID: 6570696}
   - 114: {fileID: 11433370}
   m_Layer: 0
-  m_Name: DragonBuster_OBJ2_208
+  m_Name: Enemy00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
