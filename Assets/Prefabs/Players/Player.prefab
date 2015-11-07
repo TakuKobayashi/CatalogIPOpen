@@ -3847,7 +3847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c82d5cfd2f05940b5b54629e06bf35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player_MoveLimit: .100000001
+  Player_MoveLimit: 1
   Player_Move: 0
   Afterburner:
   - {fileID: 19850752}

@@ -85,11 +85,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!198 &245173562 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19850752, guid: 17302aff3417d8943bf327dfafec7368,
-    type: 2}
-  m_PrefabInternal: {fileID: 467834345}
 --- !u!1001 &467834345
 Prefab:
   m_ObjectHideFlags: 0
@@ -97,10 +92,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11424644, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: Afterburner.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 499214, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -133,34 +124,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 19850752, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: EmissionModule.rate.scalar
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 11424644, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: Afterburner.Array.data[0]
-      value: 
-      objectReference: {fileID: 245173562}
-    - target: {fileID: 11424644, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: Afterburner.Array.data[1]
-      value: 
-      objectReference: {fileID: 572174768}
-    - target: {fileID: 11424644, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: Player_Move
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11424644, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
-      propertyPath: Player_MoveLimit
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17302aff3417d8943bf327dfafec7368, type: 2}
   m_IsPrefabParent: 0
---- !u!198 &572174768 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19858674, guid: 17302aff3417d8943bf327dfafec7368,
-    type: 2}
-  m_PrefabInternal: {fileID: 467834345}
 --- !u!1 &1013887184
 GameObject:
   m_ObjectHideFlags: 0
