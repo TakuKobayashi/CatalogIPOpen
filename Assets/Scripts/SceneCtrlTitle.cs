@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneCtrl : MonoBehaviour {
+public class SceneCtrlTitle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
