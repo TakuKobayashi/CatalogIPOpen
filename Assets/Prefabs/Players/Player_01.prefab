@@ -1020,6 +1020,7 @@ GameObject:
   - 114: {fileID: 11488264}
   - 65: {fileID: 6534204}
   - 114: {fileID: 11480874}
+  - 114: {fileID: 11405598}
   m_Layer: 8
   m_Name: XV_SM_SOLVALOU
   m_TagString: Untagged
@@ -1362,8 +1363,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151896}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.2000008, y: 4.04376841, z: -10.6300001}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: .610000014, y: 4.04376841, z: 11.5699997}
   m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 482738}
@@ -3823,6 +3824,22 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173076}
   m_Enabled: 1
+--- !u!114 &11405598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ff409826bfec547a8632306b8f2514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player_MoveLimit: .0500000007
+  Player_Move: 0
+  Afterburner:
+  - {fileID: 19835050}
+  - {fileID: 19866360}
 --- !u!114 &11416418
 MonoBehaviour:
   m_ObjectHideFlags: 1
