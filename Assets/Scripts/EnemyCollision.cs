@@ -3,13 +3,10 @@ using System.Collections;
 
 public class EnemyCollision : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public GameObject m_DestroyEffect;
+
+	public void DestroyPlay()
+	{
+		GameObject.Instantiate(m_DestroyEffect);
 	}
 }
