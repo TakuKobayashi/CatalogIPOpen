@@ -164,6 +164,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 142468, guid: 0a79a6a32b7f0604da7c4d96cf111995, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a79a6a32b7f0604da7c4d96cf111995, type: 2}
   m_IsPrefabParent: 0
@@ -468,6 +472,29 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6534204, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1759979400 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189150, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30, type: 2}
+  m_PrefabInternal: {fileID: 1759979399}
+--- !u!54 &1759979401
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759979400}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
