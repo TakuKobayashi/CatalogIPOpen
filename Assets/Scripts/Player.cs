@@ -29,7 +29,12 @@ public class Player : MonoBehaviour {
         {
             Player_Move = Player_MoveLimit*20.0f;
         }
-       
+
+        if (Input.GetMouseButtonDown(1) == true)
+        {
+            FadeManager.Instance.LoadLevel("EX_Katalog_Hirai", 2.0f);
+        }
+
         //[1]ボタンが押されているかどうかを取得する
         bool mouseLeftButton = Input.GetMouseButton(0);
         bool mouseRightButton = Input.GetMouseButton(1);
@@ -53,8 +58,8 @@ public class Player : MonoBehaviour {
         {
             Player_Move -= Player_MoveLimit;
         }
-        Afterburner[0].emissionRate = Player_Move * 50.0f;
-        Afterburner[1].emissionRate = Player_Move * 50.0f;
+        Afterburner[0].emissionRate = 30.0f + Player_Move * 50.0f;
+        Afterburner[1].emissionRate = 30.0f + Player_Move * 50.0f;
 
         transform.Rotate(new Vector3(-Player_RotY * 2, Player_RotX * 2, 0.0f));
 		
