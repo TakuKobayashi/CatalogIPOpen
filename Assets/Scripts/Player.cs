@@ -27,7 +27,7 @@ public class Player : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) == true)
         {
-            Player_Move = Player_MoveLimit*10.0f;
+            Player_Move = Player_MoveLimit*20.0f;
         }
        
         //[1]ボタンが押されているかどうかを取得する
@@ -56,10 +56,9 @@ public class Player : MonoBehaviour {
         Afterburner[0].emissionRate = Player_Move * 50.0f;
         Afterburner[1].emissionRate = Player_Move * 50.0f;
 
-        transform.Rotate(new Vector3(-Player_RotY, Player_RotX, 0.0f));
-
-        Vector3 Player_Vec;
-        Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
+        transform.Rotate(new Vector3(-Player_RotY * 2, Player_RotX * 2, 0.0f));
+		
+		Vector3 Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
         transform.Translate(Player_Vec);
     }
 
