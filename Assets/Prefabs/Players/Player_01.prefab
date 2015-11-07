@@ -1020,7 +1020,6 @@ GameObject:
   - 114: {fileID: 11488264}
   - 65: {fileID: 6534204}
   - 114: {fileID: 11480874}
-  - 54: {fileID: 5453458}
   m_Layer: 8
   m_Name: XV_SM_SOLVALOU
   m_TagString: Untagged
@@ -3798,21 +3797,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113350}
   m_Mesh: {fileID: 4300022, guid: faf3b0176d0157d4da3c75dba3ee5f97, type: 3}
---- !u!54 &5453458
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189150}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
 --- !u!65 &6534204
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3820,7 +3804,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189150}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.55999994, y: 5.84000015, z: 13.25}
