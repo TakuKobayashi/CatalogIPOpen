@@ -1,10 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Serializable]
+public class GameData
+{
+	public GameObject m_Character;
+	public GameObject m_Stage;
+	public GameObject m_Clear;
+	public GameObject m_GameOrver;
+}
+
 public class SceneCtrlGame : MonoBehaviour {
+
+	public GameData [] m_GameStageData;
 
 	enum STATE
 	{
+		INIT ,
 		COUNT_3,
 		COUNT_2,
 		COUNT_1,
@@ -16,10 +28,13 @@ public class SceneCtrlGame : MonoBehaviour {
 	bool m_EnterPls = false;
 	STATE m_State;
 	STATE m_OldState;
+
 	// Use this for initialization
 	void Start () {
 	
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,6 +50,8 @@ public class SceneCtrlGame : MonoBehaviour {
 
 		switch (m_State)
 		{
+			case ( STATE.INIT ):
+				break;
 			case (STATE.COUNT_3):
 				break;
 			case (STATE.COUNT_2):
