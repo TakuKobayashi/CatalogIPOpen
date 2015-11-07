@@ -1017,7 +1017,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482738}
-  - 114: {fileID: 11488264}
   - 65: {fileID: 6534204}
   - 114: {fileID: 11480874}
   - 114: {fileID: 11405598}
@@ -3915,22 +3914,6 @@ MonoBehaviour:
   effectWidth: 2
   effectDistance: 32
   force: 140
---- !u!114 &11488264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c82d5cfd2f05940b5b54629e06bf35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player_MoveLimit: .0500000007
-  Player_Move: 0
-  Afterburner:
-  - {fileID: 19835050}
-  - {fileID: 19866360}
 --- !u!124 &12464212
 Behaviour:
   m_ObjectHideFlags: 1
