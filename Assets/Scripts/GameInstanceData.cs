@@ -6,29 +6,32 @@ using System.Collections;
 
 public class GameInstanceData : MonoBehaviour {
 
-	public static GameInstanceData m_GameInstanceData;
+	public class HoldValue
+	{
+		public int m_Score;
+	}
+
+	public static HoldValue m_GameInstanceData;
 
 
-	public int m_Score;
+
 	// Use this for initialization
 	void awake()
 	{
 		if (m_GameInstanceData == null)
 		{
-			m_GameInstanceData = new GameInstanceData();
+			m_GameInstanceData = new HoldValue();
 		}
 	}
 
 
-	static public GameInstanceData GetGrobal()
+	static public HoldValue GetGrobal()
 	{
 		if (m_GameInstanceData == null)
 		{
-			m_GameInstanceData = new GameInstanceData();
+			m_GameInstanceData = new HoldValue();
 		}
 
 		return m_GameInstanceData;
     }
-
-
 }

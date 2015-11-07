@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ScoreCul : MonoBehaviour {
 
-	GameInstanceData m_GameInstance;
+	GameInstanceData.HoldValue m_GameInstance;
 
 	void Awake()
 	{
@@ -14,4 +14,9 @@ public class ScoreCul : MonoBehaviour {
 	{
 		m_GameInstance.m_Score += score;
     }
+
+	private void OnTriggerEnter(Collider other)
+	{
+
+	}
 }
