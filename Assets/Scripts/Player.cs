@@ -2,12 +2,15 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-    float Player_Move = 1.0f;
+    public float Player_MoveLimit;
+    public float Player_Move;
     float Player_RotX, Player_RotY;
+    public ParticleSystem[] Afterburner;
+
     // Use this for initialization
     void Start()
     {
-
+        Player_Move = Player_MoveLimit;
     }
 
     // Update is called once per frame
@@ -24,13 +27,9 @@ public class Player : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) == true)
         {
-            Player_Move = 100.0f;
+            Player_Move = Player_MoveLimit*100.0f;
         }
-        else
-        {
-            Player_Move = 1.0f;
-        }
-
+       
         //[1]ボタンが押されているかどうかを取得する
         bool mouseLeftButton = Input.GetMouseButton(0);
         bool mouseRightButton = Input.GetMouseButton(1);
@@ -50,7 +49,12 @@ public class Player : MonoBehaviour {
 
     void Player_Update()
     {
-        //transform.localRotation=Quaternion.Euler(new Vector3(Player_RotY, Player_RotX, 0.0f));
+        if (Player_Move > Player_MoveLimit)
+        {
+            Player_Move -= Player_MoveLimit;
+        }
+        Afterburner[0].emissionRate = Player_Move * 500.0f;
+        Afterburner[1].emissionRate = Player_Move * 500.0f;
 
         transform.Rotate(new Vector3(-Player_RotY, Player_RotX, 0.0f));
 
