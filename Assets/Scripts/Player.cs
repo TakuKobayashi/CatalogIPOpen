@@ -52,7 +52,7 @@ public class Player : MonoBehaviour {
     {
         //transform.localRotation=Quaternion.Euler(new Vector3(Player_RotY, Player_RotX, 0.0f));
 
-        transform.Rotate(new Vector3(Player_RotY, Player_RotX, 0.0f));
+        transform.Rotate(new Vector3(-Player_RotY, Player_RotX, 0.0f));
 
         Vector3 Player_Vec;
         Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
