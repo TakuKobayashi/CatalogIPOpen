@@ -1,58 +1,58 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &167446
+--- !u!1 &161296
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 428718}
-  - 212: {fileID: 21262088}
-  - 95: {fileID: 9567126}
-  - 65: {fileID: 6565992}
-  - 114: {fileID: 11477988}
+  - 4: {fileID: 438990}
+  - 212: {fileID: 21205406}
+  - 95: {fileID: 9509874}
+  - 65: {fileID: 6596282}
+  - 114: {fileID: 11429702}
   m_Layer: 0
-  m_Name: Yokai_OBJ1_72
+  m_Name: Genpei_OBJ11_123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &428718
+--- !u!4 &438990
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167446}
+  m_GameObject: {fileID: 161296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &6565992
+--- !u!65 &6596282
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167446}
+  m_GameObject: {fileID: 161296}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 64, y: 32, z: .200000003}
+  m_Size: {x: 64, y: 64, z: .200000003}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &9567126
+--- !u!95 &9509874
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167446}
+  m_GameObject: {fileID: 161296}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dc108ef1d73c0884c9d326dc9166d99d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8b1de6127ec656f48bd9ecd340cb7f10, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -60,24 +60,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11477988
+--- !u!114 &11429702
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167446}
+  m_GameObject: {fileID: 161296}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 681894497d715b1498ea0266caa36e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_DestroyEffect: {fileID: 181218, guid: b3d9688b1d5336943b1fe8657acf6744, type: 2}
---- !u!212 &21262088
+--- !u!212 &21205406
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167446}
+  m_GameObject: {fileID: 161296}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300084, guid: df86b900cb0bffb4cb8c902c7ef725cf, type: 3}
+  m_Sprite: {fileID: 21300166, guid: 29b03e94c5af0f14f8ab4b6121753cbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -104,16 +104,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_DestroyEffect
-      value: 
-      objectReference: {fileID: 181218, guid: b3d9688b1d5336943b1fe8657acf6744, type: 2}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 167446}
+  m_RootGameObject: {fileID: 161296}
   m_IsPrefabParent: 1

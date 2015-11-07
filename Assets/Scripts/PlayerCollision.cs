@@ -13,17 +13,10 @@ public class PlayerCollision : MonoBehaviour {
 
 		if (enemyCompo != null)
 		{
+			SendMessage( "DestroyEnemy" );
 			enemyCompo.DestroyPlay();
 		}
 	}
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

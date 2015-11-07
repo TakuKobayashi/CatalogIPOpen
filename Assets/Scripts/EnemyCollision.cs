@@ -8,5 +8,6 @@ public class EnemyCollision : MonoBehaviour {
 	public void DestroyPlay()
 	{
 		GameObject.Instantiate(m_DestroyEffect);
+		m_DestroyEffect.transform.position = this.transform.position;
 	}
 }
