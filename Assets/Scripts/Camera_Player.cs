@@ -11,8 +11,9 @@ public class Camera_Player : MonoBehaviour
 
     void Update()
     {
-        Vector3 Vec;
-        Vec = target.localPosition.z - 10.0f;
+        float V = target.localPosition.z;
+        Vector3 Vec= target.localPosition;
+        Vec.z = V - 4.0f;
         transform.position = Vec;
         transform.LookAt(target);
  
