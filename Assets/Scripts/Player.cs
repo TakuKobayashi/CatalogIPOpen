@@ -62,4 +62,10 @@ public class Player : MonoBehaviour {
         Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
         transform.Translate(Player_Vec);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        transform.Translate(new Vector3(0.0f, 0.0f, 5.0f));
+    }
+
 }
