@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 410724}
   - 212: {fileID: 21286014}
   - 95: {fileID: 9529982}
-  - 65: {fileID: 6582068}
   - 114: {fileID: 11438664}
+  - 65: {fileID: 6550174}
   m_Layer: 0
   m_Name: Yokai_OBJ4_721
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!65 &6582068
+--- !u!65 &6550174
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -41,7 +41,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 32, y: 32, z: .200000003}
+  m_Size: {x: .319999993, y: .319999993, z: .200000003}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9529982
 Animator:
