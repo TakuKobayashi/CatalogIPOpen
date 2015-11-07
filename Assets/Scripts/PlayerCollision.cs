@@ -3,14 +3,18 @@ using System.Collections;
 
 public class PlayerCollision : MonoBehaviour {
 
-	private void OnTriggerEnter(Collider other)
+
+
+	void OnCollisionEnter(Collision collision)
 	{
-		EnemyCollision enemyCompo = other.gameObject.GetComponent<EnemyCollision>();
+		
+		
+		EnemyCollision enemyCompo = collision.other.gameObject.GetComponent<EnemyCollision>();
 
 		if (enemyCompo != null)
 		{
 			enemyCompo.DestroyPlay();
-        }
+		}
 	}
 
 	// Use this for initialization
