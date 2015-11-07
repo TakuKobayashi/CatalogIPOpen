@@ -9,5 +9,6 @@ public class EnemyCollision : MonoBehaviour {
 	{
 		GameObject.Instantiate(m_DestroyEffect);
 		m_DestroyEffect.transform.position = this.transform.position;
+		GameObject.Destroy(this.gameObject);
 	}
 }
