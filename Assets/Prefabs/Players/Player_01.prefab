@@ -1020,7 +1020,7 @@ GameObject:
   - 65: {fileID: 6534204}
   - 114: {fileID: 11480874}
   - 114: {fileID: 11405598}
-  - 54: {fileID: 5400830}
+  - 54: {fileID: 5448114}
   m_Layer: 8
   m_Name: XV_SM_SOLVALOU
   m_TagString: Untagged
@@ -3798,7 +3798,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113350}
   m_Mesh: {fileID: 4300022, guid: faf3b0176d0157d4da3c75dba3ee5f97, type: 3}
---- !u!54 &5400830
+--- !u!54 &5448114
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
