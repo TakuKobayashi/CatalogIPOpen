@@ -11,13 +11,14 @@ public class GameInstanceData : MonoBehaviour {
 
 	public int m_Score;
 	// Use this for initialization
-	void Start()
+	void awake()
 	{
 		if (m_GameInstanceData == null)
 		{
 			m_GameInstanceData = new GameInstanceData();
 		}
 	}
+
 
 	static public GameInstanceData GetGrobal()
 	{
