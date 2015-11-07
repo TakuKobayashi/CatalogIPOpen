@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681894497d715b1498ea0266caa36e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_DestroyEffect: {fileID: 181218, guid: b3d9688b1d5336943b1fe8657acf6744, type: 2}
 --- !u!212 &21286014
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -108,6 +109,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DestroyEffect
+      value: 
+      objectReference: {fileID: 181218, guid: b3d9688b1d5336943b1fe8657acf6744, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 106648}
