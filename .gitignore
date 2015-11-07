@@ -49,3 +49,6 @@ AdjustPostBuildAndroidLog.txt
 current_platform.txt
 Library_iOS
 Library_Android
+
+Assets/Editor/
+Assets/Packages/
