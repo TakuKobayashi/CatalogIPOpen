@@ -6,8 +6,7 @@ public class GameController : SingletonBehaviour<GameController>
 {
 	string loadingString;
 	bool isReady;
-	[SerializeField] Prefab timerCounter;
-
+	
 	public bool IsReady { get { return isReady; } }
 
 	public void OnDestroy()
@@ -19,12 +18,14 @@ public class GameController : SingletonBehaviour<GameController>
 		}
 	}
 
+	void Awake(){
+		IngameController.Instance.Initialize ();
+	}
+
 	public void Initialize()
 	{
 		AbortAll();
 		isReady = true;
-		GameObject go = Util.InstantiateTo (this.gameObject, timerCounter);
-		go.GetComponent<TimeCounter>().onComplete = FinishGame;
 	}
 
 	void FinishGame(){
