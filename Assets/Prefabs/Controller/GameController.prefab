@@ -106,32 +106,32 @@ MonoBehaviour:
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11429702, guid: fdfa3d842b602044aa9314dc542a0c8f, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11446702, guid: 0d3a7db35a352874f81abeb2de7e5796, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11439840, guid: f4cdfc0490aae514c9298d2814c61b64, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11446264, guid: e3254b4c433cfa848bdb8c471d2dedac, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11406638, guid: 4683ff0602d6e5545a141a2c5ef9747e, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
-  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+  - collision: {fileID: 11488588, guid: c9f457fffb105284b9249e7b973ff82d, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
