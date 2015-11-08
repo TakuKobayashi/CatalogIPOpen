@@ -41,8 +41,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .375413358, y: .620823443, z: .200000003}
-  m_Center: {x: .000173531473, y: -.00958827138, z: 0}
+  m_Size: {x: -39.6833, y: 52.9111977, z: .200000003}
+  m_Center: {x: -1.26963997, y: 2.42909431, z: 0}
 --- !u!95 &9516024
 Animator:
   serializedVersion: 3
@@ -52,7 +52,7 @@ Animator:
   m_GameObject: {fileID: 127614}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 242ae69fc4f23204d9981307860945f8, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
