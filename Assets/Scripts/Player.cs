@@ -16,8 +16,8 @@ public class Player : MonoBehaviour {
 	STATE m_StateOld;
 	bool m_EnterPls;
 	float m_StateTime = 0.0f;
-
-	public enum STATE
+    bool start;
+    public enum STATE
 	{
 		BLANK ,
 		NORMAL ,
@@ -28,6 +28,7 @@ public class Player : MonoBehaviour {
     void Start()
     {
         Player_Move = Player_MoveLimit;
+        start = false;
     }
 
 	void StateChart()
@@ -75,11 +76,19 @@ public class Player : MonoBehaviour {
 		Player_Damage();
     }
 
-// Update is called once per frame
+    // Update is called once per frame
 void Update()
     {
-        Player_Input();
-		StateChart();
+        
+        IngameController.Instance.onCountDownStart = () =>
+        {
+            start = true;
+        };
+        if (start == true)
+        {
+            Player_Input();
+            StateChart();
+        }
     }
 
     void Player_Input()
