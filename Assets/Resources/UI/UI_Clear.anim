@@ -40,14 +40,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -55
-        inSlope: -26.25
-        outSlope: -26.25
+        value: -27
+        inSlope: -178.977264
+        outSlope: -178.977264
         tangentMode: 10
       - time: .183333337
         value: -59.8125
-        inSlope: -26.2499981
-        outSlope: -26.2499981
+        inSlope: -102.613632
+        outSlope: -102.613632
         tangentMode: 10
       - time: .266666681
         value: -62
@@ -91,7 +91,7 @@ AnimationClip:
     script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
-  m_WrapMode: 0
+  m_WrapMode: 4
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
@@ -120,14 +120,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -55
-        inSlope: -26.25
-        outSlope: -26.25
+        value: -27
+        inSlope: -178.977264
+        outSlope: -178.977264
         tangentMode: 10
       - time: .183333337
         value: -59.8125
-        inSlope: -26.2499981
-        outSlope: -26.2499981
+        inSlope: -102.613632
+        outSlope: -102.613632
         tangentMode: 10
       - time: .266666681
         value: -62
