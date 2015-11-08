@@ -3,6 +3,9 @@ using System.Collections;
 
 public class SceneCtrlTitle : MonoBehaviour {
 
+
+	AudioSource m_AudioSource;
+
 	public AnimationCurve m_Curve;
 	Vector3 m_StartPos;
 	public float m_MaxPos;
@@ -24,6 +27,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_TitleChara = GameObject.Find(m_TitleCharaName);
+		m_AudioSource = GameObject.Find("Main Camera").gameObject.GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -78,6 +82,11 @@ public class SceneCtrlTitle : MonoBehaviour {
 
 	void stMove()
 	{
+		if (m_EnterPls)
+		{
+			m_AudioSource.Play();
+        }
+
 		if ( m_StateTime > m_OutTime )
 		{
 			m_State = STATE.END;
