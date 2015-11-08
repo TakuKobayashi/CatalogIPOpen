@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
 	public AnimationCurve m_DamegeBackCurve;
 	public float m_BackSpeed;
 	public float m_BackTime;
+	bool m_Stop;
 
 	STATE m_State = STATE.BLANK;
 	STATE m_StateOld;
@@ -132,15 +133,35 @@ void Update()
 
 		float damegeSpeed = m_DamegeBackCurve.Evaluate( m_StateTime / m_BackTime ) * m_BackSpeed;
 
-//		Vector3 Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
-//		transform.Translate(Player_Vec);
-		Vector3 Player_Vec = new Vector3(0.0f, 0.0f, damegeSpeed);
-		transform.Translate(Player_Vec * Time.deltaTime);
+		if (!m_Stop)
+		{
+			Vector3 Player_Vec = new Vector3(0.0f, 0.0f, damegeSpeed);
+			transform.Translate(Player_Vec * Time.deltaTime);
+		}
+
 	}
 
 	void OnCollisionEnter(Collision collision)
     {
-		m_State = STATE.DAMAGE;
+		if ( m_EnterPls )
+		{
+			m_Stop = false;
+        }
+
+		if (m_State ==  STATE.DAMAGE && m_StateTime > 0.1f)
+		{
+			EnemyCollision otherCompo = collision.other.gameObject.GetComponent<EnemyCollision>();
+			if (otherCompo == null)
+			{
+				m_Stop = true;
+            }
+		}else
+		{
+			m_State = STATE.DAMAGE;
+		}
+
+
+		
 		//transform.Translate(new Vector3(0.0f, 0.0f, -5.0f));
 	}
 
