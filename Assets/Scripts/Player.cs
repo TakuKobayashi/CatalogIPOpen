@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
 	bool m_EnterPls;
 	float m_StateTime = 0.0f;
     bool start;
+
+	public AudioSource m_LaunchSound;
     public enum STATE
 	{
 		BLANK ,
@@ -99,6 +101,7 @@ void Update()
         if (Input.GetMouseButtonDown(0) == true)
         {
             Player_Move = Player_MoveLimit*20.0f;
+			m_LaunchSound.Play();
         }
        
         //[1]ボタンが押されているかどうかを取得する
