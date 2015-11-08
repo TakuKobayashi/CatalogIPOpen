@@ -573,10 +573,6 @@ Prefab:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
-      propertyPath: scoreCalculator._gameObject
-      value: 
-      objectReference: {fileID: 180966, guid: 80312b563394e4920bc03d4efb375716, type: 2}
-    - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
       propertyPath: enemyList.Array.data[0].target
       value: 
       objectReference: {fileID: 1413485115}
