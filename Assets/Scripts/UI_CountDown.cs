@@ -18,6 +18,12 @@ public class UI_CountDown : MonoBehaviour {
         if (Fcnt == 120) Count.text = "1";
         if (Fcnt == 180) Count.text = "GO";
         if (Fcnt == 200) Count.text = "";
-
+        IngameController.Instance.onFinish = () => {
+            FadeManager.Instance.LoadLevel("Result", 1.0f);
+        };
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            FadeManager.Instance.LoadLevel("Result", 1.0f);
+        }
     }
 }
