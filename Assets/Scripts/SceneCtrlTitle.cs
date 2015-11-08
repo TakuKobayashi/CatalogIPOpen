@@ -9,6 +9,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 	public float m_OutTime;
 	GameObject m_TitleChara;
 
+	public string m_TitleCharaName;
 	enum STATE {
 		BLANK,
 		WAIT,
@@ -22,8 +23,8 @@ public class SceneCtrlTitle : MonoBehaviour {
 	float m_StateTime = 0.0f;
 	// Use this for initialization
 	void Start () {
-
-	}
+		m_TitleChara = GameObject.Find(m_TitleCharaName);
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -84,6 +85,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 
 		Vector3 tempPos = m_StartPos;
 		tempPos.y = tempPos.y + m_Curve.Evaluate( m_StateTime / m_OutTime)* m_MaxPos;
+		m_TitleChara.transform.position = tempPos;
     }
 
 	void stEnd()
