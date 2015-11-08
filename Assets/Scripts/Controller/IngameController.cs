@@ -29,6 +29,8 @@ public class IngameController : SingletonBehaviour<IngameController>
 		}
 	}
 
+	List<EnemyCollision> aliveList = new List<EnemyCollision>();
+
 	public void Initialize()
 	{
 		GameObject go = Util.InstantiateTo (this.gameObject, timerCounter);
@@ -46,11 +48,22 @@ public class IngameController : SingletonBehaviour<IngameController>
 			if(onCountDownStart != null) onCountDownStart();
 		};
 
+		int id = 1;
 		foreach(Enemy e in enemyList){
 			GameObject ego = Util.InstantiateTo (e.target, e.collision.gameObject);
 			ego.transform.localPosition = e.position;
 			ego.transform.localRotation = e.rotation;
 			ego.transform.localScale = e.scale;
+			ego.tag = id.ToString();
+			EnemyCollision ec = ego.GetComponent<EnemyCollision>();
+			aliveList.Add(ec);
+			id++;
+			ec.OnDestroyed = (EnemyCollision enemyCollision) => {
+				aliveList.RemoveAll((eneC) => eneC.tag == enemyCollision.tag);
+				if(aliveList.Count <= 0){
+					LoadResult();
+				}
+			};
 		}
 	}
 	
