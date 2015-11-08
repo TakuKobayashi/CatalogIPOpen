@@ -7,17 +7,78 @@ public class Player : MonoBehaviour {
     float Player_RotX, Player_RotY;
     public ParticleSystem[] Afterburner;
 
+	public AnimationCurve m_DamegeBackCurve;
+	public float m_BackSpeed;
+	public float m_BackTime;
+
+	public STATE m_State = STATE.BLANK;
+	STATE m_StateOld;
+	bool m_EnterPls;
+	float m_StateTime = 0.0f;
+
+	public enum STATE
+	{
+		BLANK ,
+		NORMAL ,
+		DAMAGE 
+	}
+
     // Use this for initialization
     void Start()
     {
         Player_Move = Player_MoveLimit;
     }
 
-    // Update is called once per frame
-    void Update()
+	void StateChart()
+	{
+		if (m_StateOld != m_State)
+		{
+			m_StateOld = m_State;
+			m_EnterPls = true;
+			m_StateTime = 0.0f;
+		}
+		else
+		{
+			m_StateTime += Time.deltaTime;
+			m_EnterPls = false;
+		}
+
+		switch (m_State)
+		{
+			case (STATE.BLANK):
+				stBlank();
+				break;
+			case (STATE.NORMAL):
+				stNormal();
+				break;
+			case (STATE.DAMAGE):
+				stDamage();
+				break;
+
+		}
+
+	}
+
+	void stBlank()
+	{
+		m_State = STATE.NORMAL;
+	}
+
+	void stNormal()
+	{
+		Player_Update();
+	}
+	
+	void stDamage()
+	{
+		Player_Damage();
+    }
+
+// Update is called once per frame
+void Update()
     {
         Player_Input();
-        Player_Update();
+		StateChart();
     }
 
     void Player_Input()
@@ -62,9 +123,25 @@ public class Player : MonoBehaviour {
         transform.Translate(Player_Vec);
     }
 
-    void OnCollisionEnter(Collision collision)
+	void Player_Damage()
+	{
+		if (m_StateTime > m_BackTime )
+		{
+			m_State = STATE.NORMAL;
+		}
+
+		float damegeSpeed = m_DamegeBackCurve.Evaluate( m_StateTime / m_BackTime ) * m_BackSpeed;
+
+//		Vector3 Player_Vec = new Vector3(0.0f, 0.0f, Player_Move);
+//		transform.Translate(Player_Vec);
+		Vector3 Player_Vec = new Vector3(0.0f, 0.0f, damegeSpeed);
+		transform.Translate(Player_Vec * Time.deltaTime);
+	}
+
+	void OnCollisionEnter(Collision collision)
     {
-        transform.Translate(new Vector3(0.0f, 0.0f, -5.0f));
-    }
+		m_State = STATE.DAMAGE;
+		//transform.Translate(new Vector3(0.0f, 0.0f, -5.0f));
+	}
 
 }

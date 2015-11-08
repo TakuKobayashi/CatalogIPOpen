@@ -3995,7 +3995,30 @@ MonoBehaviour:
   Player_Move: 0
   Afterburner:
   - {fileID: 19864332}
-  - {fileID: 0}
+  - {fileID: 19835050}
+  m_DamegeBackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: -.00135869568
+      value: 1.00660777
+      inSlope: -3.41598511
+      outSlope: -3.41598511
+      tangentMode: 0
+    - time: .56803453
+      value: .130619079
+      inSlope: -.241915435
+      outSlope: -.241915435
+      tangentMode: 0
+    - time: .987771749
+      value: .00660812855
+      inSlope: -.295449018
+      outSlope: -.295449018
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  m_BackSpeed: -80
+  m_BackTime: .699999988
+  m_State: 0
 --- !u!114 &11447754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8358,6 +8381,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Intro
       value: 
       objectReference: {fileID: 8288302}
@@ -8380,6 +8407,70 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Volume
       value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_BackSpeed
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_BackTime
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[0].inSlope
+      value: -3.41598511
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[0].outSlope
+      value: -3.41598511
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[1].inSlope
+      value: -.241915435
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[1].outSlope
+      value: -.241915435
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[0].value
+      value: 1.00660777
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[0].time
+      value: -.00135869568
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[1].value
+      value: .130619079
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[1].time
+      value: .56803453
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[2].inSlope
+      value: -.295449018
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_DamegeBackCurve.m_Curve.Array.data[2].outSlope
+      value: -.295449018
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Player_MoveLimit
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Player_Move
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

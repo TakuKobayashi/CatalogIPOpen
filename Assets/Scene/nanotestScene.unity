@@ -449,10 +449,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11405598, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30, type: 2}
-      propertyPath: Afterburner.Array.data[1]
-      value: 
-      objectReference: {fileID: 1711310440}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30, type: 2}
   m_IsPrefabParent: 0
@@ -785,8 +781,3 @@ RectTransform:
   m_AnchoredPosition: {x: -.000885009766, y: -1.76663208}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
---- !u!198 &1711310440 stripped
-ParticleSystem:
-  m_PrefabParentObject: {fileID: 19835050, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30,
-    type: 2}
-  m_PrefabInternal: {fileID: 1222023804}
