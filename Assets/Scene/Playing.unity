@@ -364,6 +364,34 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 198686, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 184414, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137454, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 161044, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 172764, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191284, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123660, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
   m_IsPrefabParent: 0
@@ -468,6 +496,10 @@ Prefab:
       propertyPath: enemyList.Array.data[0].target
       value: 
       objectReference: {fileID: 1413485115}
+    - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
+      propertyPath: enemyList.Array.data[1].target
+      value: 
+      objectReference: {fileID: 1830682907}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
   m_IsPrefabParent: 0
@@ -678,3 +710,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 19835050, guid: 5475b0adbbeaedd4dab9c7cc4ac73a30,
     type: 2}
   m_PrefabInternal: {fileID: 1222023804}
+--- !u!1 &1830682907 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 172764, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+  m_PrefabInternal: {fileID: 1279840630}
