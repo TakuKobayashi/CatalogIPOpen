@@ -605,10 +605,6 @@ Prefab:
       value: 
       objectReference: {fileID: 1830682907}
     - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
-      propertyPath: enemyList.Array.data[9].target
-      value: 
-      objectReference: {fileID: 1830682907}
-    - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
       propertyPath: enemyList.Array.data[10].target
       value: 
       objectReference: {fileID: 1251109927}
