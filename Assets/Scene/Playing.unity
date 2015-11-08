@@ -85,10 +85,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &799319780 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 161044, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
-  m_PrefabInternal: {fileID: 1279840630}
 --- !u!1 &1013887184
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +360,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 119718, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
   m_IsPrefabParent: 0
@@ -421,6 +421,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1413485115 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 119718, guid: da8da4e6e3149974f8cf7f8eb507a229, type: 2}
+  m_PrefabInternal: {fileID: 1279840630}
 --- !u!1001 &1434797071
 Prefab:
   m_ObjectHideFlags: 0
@@ -461,12 +465,39 @@ Prefab:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11489988, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
-      propertyPath: valkyrie
+      propertyPath: enemyList.Array.data[0].target
       value: 
-      objectReference: {fileID: 799319780}
+      objectReference: {fileID: 1413485115}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 166dad8da96f24133939c14e8b019d8f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1461113344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1400679123}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1461113345}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461113345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1400679123}
+  m_GameObject: {fileID: 1461113344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &1585176921
 GameObject:
   m_ObjectHideFlags: 0
