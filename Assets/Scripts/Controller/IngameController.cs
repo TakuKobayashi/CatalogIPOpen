@@ -16,6 +16,7 @@ public class IngameController : SingletonBehaviour<IngameController>
 
 	[SerializeField] Prefab timerCounter;
 	[SerializeField] Prefab scoreCalculator;
+	[SerializeField] Prefab countDown;
 	[SerializeField] List<Enemy> enemyList;
 	
 	ScoreCalculator calculator;
@@ -39,6 +40,8 @@ public class IngameController : SingletonBehaviour<IngameController>
 
 		GameObject cgo = Util.InstantiateTo (this.gameObject, scoreCalculator);
 		calculator = cgo.GetComponent<ScoreCalculator>();
+
+		Util.InstantiateTo (this.gameObject, countDown);
 
 		foreach(Enemy e in enemyList){
 			GameObject ego = Util.InstantiateTo (e.target, e.collision.gameObject);
