@@ -15,7 +15,7 @@ public class Result_CameraAniation : MonoBehaviour {
 	void Update () {
         transform.Rotate(AnimX*b, AnimY*a, 0);
         Cnt+=a;
-        if (Cnt > 450 || Cnt < -450)
+        if (Cnt > 45 || Cnt < -45)
         {
             a *= -1;
         }
