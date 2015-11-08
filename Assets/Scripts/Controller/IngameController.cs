@@ -33,6 +33,7 @@ public class IngameController : SingletonBehaviour<IngameController>
 
 	public void Initialize()
 	{
+		PlayerPrefs.SetInt ("Score", 0);
 		GameObject go = Util.InstantiateTo (this.gameObject, timerCounter);
 		TimeCounter tc = go.GetComponent<TimeCounter> ();
 		tc.onComplete = () => {

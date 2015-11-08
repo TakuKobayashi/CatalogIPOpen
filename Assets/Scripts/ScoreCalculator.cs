@@ -18,11 +18,12 @@ public class ScoreCalculator : MonoBehaviour {
 	}
 
 	void UpdateView(){
-		scoreText.text = string.Format ("score: {0}", currentScore);
+		scoreText.text = string.Format ("score: {0}", PlayerPrefs.GetInt ("Score", 0));
 	}
 
 	public void AddScore(int score){
 		currentScore += score;
+		PlayerPrefs.SetInt ("Score", currentScore);
 		UpdateView ();
 	}
 }
