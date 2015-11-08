@@ -129,9 +129,9 @@ MonoBehaviour:
     scale: {x: .0199999996, y: .0199999996, z: .0199999996}
     target: {fileID: 0}
   - collision: {fileID: 11406638, guid: 4683ff0602d6e5545a141a2c5ef9747e, type: 2}
-    position: {x: 0, y: -1.07000005, z: 1.13}
-    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
-    scale: {x: .0199999996, y: .0199999996, z: .0199999996}
+    position: {x: 2, y: 1.20000005, z: .400000006}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+    scale: {x: .0299999993, y: .0299999993, z: .0299999993}
     target: {fileID: 0}
   - collision: {fileID: 11488588, guid: c9f457fffb105284b9249e7b973ff82d, type: 2}
     position: {x: -1.79999995, y: .800000012, z: 0}
