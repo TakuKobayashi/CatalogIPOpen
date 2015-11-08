@@ -46,6 +46,7 @@ public class IngameController : SingletonBehaviour<IngameController>
 
 		GameObject coGo = Util.InstantiateTo (this.gameObject, countDown);
 		coGo.GetComponent<UI_CountDown>().onCountDownFinish = () => {
+			tc.startTimer();
 			if(onCountDownStart != null) onCountDownStart();
 		};
 
