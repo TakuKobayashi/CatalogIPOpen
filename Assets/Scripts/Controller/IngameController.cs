@@ -5,10 +5,18 @@ using System.Collections.Generic;
 
 public class IngameController : SingletonBehaviour<IngameController> 
 {
+	[Serializable]
+	public struct Enemy{
+		public EnemyCollision collision;
+		public Vector3 position;
+		public Vector3 scale;
+	}
+
 	[SerializeField] Prefab timerCounter;
 	[SerializeField] Prefab scoreCalculator;
-	[SerializeField] Prefab enemyController;
-
+	[SerializeField] GameObject valkyrie;
+	[SerializeField] List<Enemy> enemyList;
+	
 	ScoreCalculator calculator;
 	public Action onFinish;
 
@@ -26,9 +34,11 @@ public class IngameController : SingletonBehaviour<IngameController>
 		GameObject cgo = Util.InstantiateTo (this.gameObject, scoreCalculator);
 		calculator = cgo.GetComponent<ScoreCalculator>();
 
-		GameObject ego = Util.InstantiateTo (this.gameObject, enemyController);
-		EnemyController enemy = ego.GetComponent<EnemyController>();
-		enemy.Appear();
+		foreach(Enemy e in enemyList){
+			GameObject ego = Util.InstantiateTo (valkyrie, e.collision.gameObject);
+			ego.transform.localPosition = e.position;
+			ego.transform.localScale = e.scale;
+		}
 	}
 
 	public void AddScore(int score){
