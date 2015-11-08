@@ -809,6 +809,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11479234, guid: 0f982451f8ed6fc4ea5332fd4625750b, type: 2}
+      propertyPath: m_SoundEndTime
+      value: 2.79999995
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f982451f8ed6fc4ea5332fd4625750b, type: 2}
   m_IsPrefabParent: 0
