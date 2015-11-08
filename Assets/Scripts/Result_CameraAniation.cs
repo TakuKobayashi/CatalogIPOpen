@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Result_CameraAniation : MonoBehaviour {
-    public float AnimY = 1.6f;
+    public float AnimY = 0.5f;
     public float AnimX = 0.02f;
     public int Cnt;
     int a=1,b=1;
@@ -15,11 +15,13 @@ public class Result_CameraAniation : MonoBehaviour {
 	void Update () {
         transform.Rotate(AnimX*b, AnimY*a, 0);
         Cnt+=a;
+	/*
         if (Cnt > 45 || Cnt < -45)
         {
             a *= -1;
         }
-        if (Cnt % 100 == 0)
+      */
+      if (Cnt % 100 == 0)
         {
             b *= -1;
         }
