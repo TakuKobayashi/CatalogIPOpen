@@ -25,7 +25,7 @@ public class UI_CountDown : MonoBehaviour {
 			Counter.gameObject.SetActive(false);
 			if(onCountDownFinish != null) onCountDownFinish();
 		} else if (StartCount - progress.TotalSeconds <= 1) {
-			Counter.text = "GO";
+			Counter.text = "START";
 		} else {
 			Counter.text = string.Format("{0}", (int)(StartCount - progress.TotalSeconds));
 		}
