@@ -16,15 +16,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &165624
+--- !u!1 &152312
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 464800}
-  - 114: {fileID: 11489988}
+  - 4: {fileID: 470936}
+  - 114: {fileID: 11454738}
   m_Layer: 0
   m_Name: IngameController
   m_TagString: Untagged
@@ -42,15 +42,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 464800}
+  - {fileID: 470936}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &464800
+--- !u!4 &470936
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165624}
+  m_GameObject: {fileID: 152312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -69,12 +69,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 1
---- !u!114 &11489988
+--- !u!114 &11454738
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165624}
+  m_GameObject: {fileID: 152312}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c19472473a8744916a92b12538fd1dd6, type: 3}
@@ -85,14 +85,8 @@ MonoBehaviour:
     _gameObject: {fileID: 196114, guid: a4f781c5cdc9148638bafe5b66dfdc3d, type: 2}
   scoreCalculator:
     _gameObject: {fileID: 180966, guid: 80312b563394e4920bc03d4efb375716, type: 2}
-  valkyrie: {fileID: 0}
-  enemyList:
-  - collision: {fileID: 11433370, guid: 163d73eff4f69b6469ec98e14857f15f, type: 2}
-    position: {x: .0250000004, y: .335000008, z: .156000003}
-    scale: {x: 1, y: 1, z: 1}
-  - collision: {fileID: 11433370, guid: 163d73eff4f69b6469ec98e14857f15f, type: 2}
-    position: {x: 0, y: 1.31200004, z: .149000004}
-    scale: {x: .0199999996, y: .0199999996, z: .0199999996}
+  enemyController:
+    _gameObject: {fileID: 160044, guid: 29cea82dffd5048d591f949e7135ada2, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
