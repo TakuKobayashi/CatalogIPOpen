@@ -470,6 +470,7 @@ GameObject:
   - 223: {fileID: 1585176925}
   - 114: {fileID: 1585176924}
   - 114: {fileID: 1585176923}
+  - 114: {fileID: 1585176926}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -543,12 +544,24 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
+--- !u!114 &1585176926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585176921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d8b5f722f32454c8e03f43098f7a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Count: {fileID: 1605467842}
 --- !u!1 &1605467841
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: .986206889, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -589,7 +602,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
