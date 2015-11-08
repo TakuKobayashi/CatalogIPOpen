@@ -1,13 +1,103 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &182652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 491572}
+  - 114: {fileID: 11479234}
+  m_Layer: 0
+  m_Name: TitleGrobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491572
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11479234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e925ec2165a6bb7488a4fd8bfdec812e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Curve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: -.810803413
+      outSlope: -.810803413
+      tangentMode: 10
+    - time: .280284077
+      value: -.227255285
+      inSlope: .33800137
+      outSlope: .33800137
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1.705194
+      outSlope: 1.705194
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  m_MaxPos: 500
+  m_OutTime: 1
+  m_TitleCharaName: Enemy10
 --- !u!1001 &100100000
 Prefab:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TitleCharaName
+      value: Enemy10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[0].inSlope
+      value: -.810803413
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[0].outSlope
+      value: -.810803413
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[1].value
+      value: -.227255285
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[2].inSlope
+      value: 1.705194
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[2].outSlope
+      value: 1.705194
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Curve.m_Curve.Array.data[1].time
+      value: .280284077
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 0}
+  m_RootGameObject: {fileID: 182652}
   m_IsPrefabParent: 1
