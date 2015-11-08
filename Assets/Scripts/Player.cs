@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
 	public float m_BackSpeed;
 	public float m_BackTime;
 
-	public STATE m_State = STATE.BLANK;
+	STATE m_State = STATE.BLANK;
 	STATE m_StateOld;
 	bool m_EnterPls;
 	float m_StateTime = 0.0f;
