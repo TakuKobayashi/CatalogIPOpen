@@ -91,6 +91,11 @@ MonoBehaviour:
     rotation: {x: 0, y: 27, z: 0, w: 0}
     scale: {x: .5, y: .5, z: .5}
     target: {fileID: 0}
+  - collision: {fileID: 11428788, guid: e4b71df59fe01e9429c7a64d59e58c9c, type: 2}
+    position: {x: -.458999991, y: .100000001, z: -.100000001}
+    rotation: {x: -24.0760002, y: -96.2229996, z: 45.9780006, w: 0}
+    scale: {x: .00999999978, y: .00999999978, z: .00999999978}
+    target: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
