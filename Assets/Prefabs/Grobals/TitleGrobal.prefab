@@ -44,18 +44,18 @@ MonoBehaviour:
     m_Curve:
     - time: 0
       value: 0
-      inSlope: -.810803413
-      outSlope: -.810803413
+      inSlope: -.192666337
+      outSlope: -.192666337
       tangentMode: 10
-    - time: .280284077
-      value: -.227255285
+    - time: .278925389
+      value: -.0537395328
       inSlope: .33800137
       outSlope: .33800137
       tangentMode: 0
     - time: 1
       value: 1
-      inSlope: 1.705194
-      outSlope: 1.705194
+      inSlope: 1.46134615
+      outSlope: 1.46134615
       tangentMode: 10
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -75,27 +75,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[0].inSlope
-      value: -.810803413
+      value: -.192666337
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[0].outSlope
-      value: -.810803413
+      value: -.192666337
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[1].value
-      value: -.227255285
+      value: -.0537395328
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[2].inSlope
-      value: 1.705194
+      value: 1.46134615
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[2].outSlope
-      value: 1.705194
+      value: 1.46134615
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Curve.m_Curve.Array.data[1].time
-      value: .280284077
+      value: .278925389
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
