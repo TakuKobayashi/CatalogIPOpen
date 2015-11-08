@@ -43,17 +43,17 @@ public class SceneCtrlTitle : MonoBehaviour {
 		switch (m_State)
 		{
 			case (STATE.BLANK):
-
-				break;
+				stBlank();
+                break;
 			case (STATE.WAIT):
-
-				break;
+				stWait();
+                break;
 			case (STATE.MOVE):
-
-				break;
+				stMove();
+                break;
 			case (STATE.END):
-
-				break;
+				stEnd();
+                break;
 		}
 	}
 
