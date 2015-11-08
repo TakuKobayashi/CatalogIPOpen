@@ -84,7 +84,7 @@ MonoBehaviour:
   timerCounter:
     _gameObject: {fileID: 196114, guid: a4f781c5cdc9148638bafe5b66dfdc3d, type: 2}
   scoreCalculator:
-    _gameObject: {fileID: 180966, guid: 80312b563394e4920bc03d4efb375716, type: 2}
+    _gameObject: {fileID: 0}
   enemyList:
   - collision: {fileID: 11433370, guid: 163d73eff4f69b6469ec98e14857f15f, type: 2}
     position: {x: .0560000017, y: .360000014, z: .300000012}
@@ -105,6 +105,56 @@ MonoBehaviour:
     position: {x: .189999998, y: -1.07000005, z: 1.13}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11437910, guid: 3709424c1c757d6429ae9f3f5b5e942d, type: 2}
+    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    target: {fileID: 0}
+  - collision: {fileID: 11477988, guid: 3b59800557ca9fc43be7e10f4382edd4, type: 2}
+    position: {x: .0410000011, y: .0810000002, z: .0850000009}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00345508591, y: .00345508591, z: .00345508591}
+    target: {fileID: 0}
+  - collision: {fileID: 11463534, guid: 703c394757b8c66498ee34145341e01a, type: 2}
+    position: {x: 0, y: .266000003, z: 0}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00191621599, y: .00191621599, z: .00191621599}
+    target: {fileID: 0}
+  - collision: {fileID: 11433986, guid: bcbf9dbca58d0b04cb15f77a3837b12b, type: 2}
+    position: {x: -.542999983, y: 1.20000005, z: 0}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00332443789, y: .00332443789, z: .00332443789}
+    target: {fileID: 0}
+  - collision: {fileID: 11438664, guid: ab482251d092b8747ad672eae8c31092, type: 2}
+    position: {x: .547999978, y: 1.18299997, z: 0}
+    rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
+    scale: {x: .00432188204, y: .00432188204, z: .00432188204}
     target: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
