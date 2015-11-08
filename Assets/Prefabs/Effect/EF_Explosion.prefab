@@ -77,7 +77,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 486012}
   - 108: {fileID: 10834598}
-  - 114: {fileID: 11411514}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -282,30 +281,6 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11411514
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 151598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867114976266143c79cbabe26a23f0e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lighting: 1
-  lightPower: {fileID: 0}
-  flashFlg: 0
-  flashTimer: .300000012
-  revOnTime: 0
-  keepOnTime: 0
-  keepTime: 0
-  flashingFlg: 0
-  minLight: 0
-  maxLight: 1
-  flashingOff: 0
-  flashingOffPower: 0
-  flashingOffIntensity: 1
 --- !u!198 &19818612
 ParticleSystem:
   m_ObjectHideFlags: 1
