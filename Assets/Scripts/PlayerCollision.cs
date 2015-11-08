@@ -4,7 +4,6 @@ using System.Collections;
 public class PlayerCollision : MonoBehaviour {
 
 
-
 	void OnCollisionEnter(Collision collision)
 	{
 		
@@ -17,6 +16,5 @@ public class PlayerCollision : MonoBehaviour {
 			enemyCompo.DestroyPlay();
 		}
 	}
-
-
+	
 }
