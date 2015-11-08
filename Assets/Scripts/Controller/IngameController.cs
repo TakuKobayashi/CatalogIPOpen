@@ -21,7 +21,8 @@ public class IngameController : SingletonBehaviour<IngameController>
 	
 	ScoreCalculator calculator;
 	public Action onFinish;
-
+	public Action onCountDownStart;
+	
 	public int CurrentScore{
 		get{
 			return calculator.CurrentScore;
@@ -33,15 +34,17 @@ public class IngameController : SingletonBehaviour<IngameController>
 		GameObject go = Util.InstantiateTo (this.gameObject, timerCounter);
 		TimeCounter tc = go.GetComponent<TimeCounter> ();
 		tc.onComplete = () => {
-			if (onFinish != null)
-				onFinish ();
+			LoadResult();
 		};
 		tc.Inithialize ();
 
 		GameObject cgo = Util.InstantiateTo (this.gameObject, scoreCalculator);
 		calculator = cgo.GetComponent<ScoreCalculator>();
 
-		Util.InstantiateTo (this.gameObject, countDown);
+		GameObject coGo = Util.InstantiateTo (this.gameObject, countDown);
+		coGo.GetComponent<UI_CountDown>().onCountDownFinish = () => {
+			if(onCountDownStart != null) onCountDownStart();
+		};
 
 		foreach(Enemy e in enemyList){
 			GameObject ego = Util.InstantiateTo (e.target, e.collision.gameObject);
@@ -50,8 +53,12 @@ public class IngameController : SingletonBehaviour<IngameController>
 			ego.transform.localScale = e.scale;
 		}
 	}
-
+	
 	public void AddScore(int score){
 		calculator.AddScore (score);
+	}
+
+	void LoadResult(){
+		FadeManager.Instance.LoadLevel("Result", 1.0f);
 	}
 }

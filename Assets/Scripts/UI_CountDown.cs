@@ -1,29 +1,33 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using UnityEngine.UI;
 
 public class UI_CountDown : MonoBehaviour {
-    public Text Count;
-    int Fcnt=0;
-    // Use this for initialization
+	DateTime startTime;
+	readonly int StartCount = 4;
+	bool isStart;
+
+    public Text Counter;
+	public Action onCountDownFinish;
+
     void Start () {
-        Fcnt = 0;
-        Count.text = "3";
+		Counter.text = "3".ToString();
+		startTime = DateTime.Now;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        Fcnt++;
-        if (Fcnt == 60) Count.text = "2";
-        if (Fcnt == 120) Count.text = "1";
-        if (Fcnt == 180) Count.text = "GO";
-        if (Fcnt == 200) Count.text = "";
-        IngameController.Instance.onFinish = () => {
-            FadeManager.Instance.LoadLevel("Result", 1.0f);
-        };
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            FadeManager.Instance.LoadLevel("Result", 1.0f);
-        }
+		if (isStart) return;
+		TimeSpan progress = DateTime.Now - startTime;
+		if (progress.TotalSeconds > StartCount) {
+			isStart = true;
+			Counter.gameObject.SetActive(false);
+			if(onCountDownFinish != null) onCountDownFinish();
+		} else if (StartCount - progress.TotalSeconds <= 1) {
+			Counter.text = "GO";
+		} else {
+			Counter.text = string.Format("{0}", (int)(StartCount - progress.TotalSeconds));
+		}
     }
 }
