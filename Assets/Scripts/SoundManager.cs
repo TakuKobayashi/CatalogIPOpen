@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour {
 	{
 		if (true)
 		{
-			m_State = STATE.INTRO;
+			m_State = STATE.MAIN;
 		}
 	}
 
