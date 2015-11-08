@@ -12,6 +12,7 @@ public class PlayerCollision : MonoBehaviour {
 
 		if (enemyCompo != null)
 		{
+			SendMessage( "DestroyEnemy" );
 			enemyCompo.DestroyPlay();
 		}
 	}
