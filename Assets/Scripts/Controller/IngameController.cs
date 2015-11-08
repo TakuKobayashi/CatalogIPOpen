@@ -54,12 +54,12 @@ public class IngameController : SingletonBehaviour<IngameController>
 			ego.transform.localPosition = e.position;
 			ego.transform.localRotation = e.rotation;
 			ego.transform.localScale = e.scale;
-			ego.tag = id.ToString();
+			ego.name = id.ToString();
 			EnemyCollision ec = ego.GetComponent<EnemyCollision>();
 			aliveList.Add(ec);
 			id++;
 			ec.OnDestroyed = (EnemyCollision enemyCollision) => {
-				aliveList.RemoveAll((eneC) => eneC.tag == enemyCollision.tag);
+				aliveList.RemoveAll((eneC) => eneC.name == enemyCollision.name);
 				if(aliveList.Count <= 0){
 					LoadResult();
 				}
