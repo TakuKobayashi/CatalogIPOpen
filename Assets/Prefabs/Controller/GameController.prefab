@@ -84,7 +84,7 @@ MonoBehaviour:
   timerCounter:
     _gameObject: {fileID: 196114, guid: a4f781c5cdc9148638bafe5b66dfdc3d, type: 2}
   scoreCalculator:
-    _gameObject: {fileID: 0}
+    _gameObject: {fileID: 180966, guid: 80312b563394e4920bc03d4efb375716, type: 2}
   enemyList:
   - collision: {fileID: 11433370, guid: 163d73eff4f69b6469ec98e14857f15f, type: 2}
     position: {x: .0560000017, y: .360000014, z: .300000012}
