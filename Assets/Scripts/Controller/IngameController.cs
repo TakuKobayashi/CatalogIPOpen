@@ -9,12 +9,13 @@ public class IngameController : SingletonBehaviour<IngameController>
 	public struct Enemy{
 		public EnemyCollision collision;
 		public Vector3 position;
+		public Quaternion rotation;
 		public Vector3 scale;
+		public GameObject target;
 	}
 
 	[SerializeField] Prefab timerCounter;
 	[SerializeField] Prefab scoreCalculator;
-	[SerializeField] GameObject valkyrie;
 	[SerializeField] List<Enemy> enemyList;
 	
 	ScoreCalculator calculator;
@@ -40,8 +41,9 @@ public class IngameController : SingletonBehaviour<IngameController>
 		calculator = cgo.GetComponent<ScoreCalculator>();
 
 		foreach(Enemy e in enemyList){
-			GameObject ego = Util.InstantiateTo (valkyrie, e.collision.gameObject);
+			GameObject ego = Util.InstantiateTo (e.target, e.collision.gameObject);
 			ego.transform.localPosition = e.position;
+			ego.transform.localRotation = e.rotation;
 			ego.transform.localScale = e.scale;
 		}
 	}
