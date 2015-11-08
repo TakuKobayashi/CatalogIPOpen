@@ -13,6 +13,6 @@ public class ResultAnimator : MonoBehaviour {
 
 	void Start()
 	{
-		m_Anime.Play("003_NOT01_Final" , -1 , 0.0032f);
+		m_Anime.Play("003_NOT01_Final", -1 , 0.062f);
     }
 }
