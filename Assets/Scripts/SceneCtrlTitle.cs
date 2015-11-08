@@ -10,6 +10,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 	Vector3 m_StartPos;
 	public float m_MaxPos;
 	public float m_OutTime;
+	public float m_SoundEndTime;
 	GameObject m_TitleChara;
 
 	public string m_TitleCharaName;
@@ -87,7 +88,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 			m_AudioSource.Play();
         }
 
-		if ( m_StateTime > m_OutTime )
+		if ( m_StateTime > m_OutTime && m_StateTime > m_SoundEndTime)
 		{
 			m_State = STATE.END;
 		}
