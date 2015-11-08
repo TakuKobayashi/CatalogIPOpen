@@ -21,20 +21,13 @@ public class SceneCtrlTitle : MonoBehaviour {
 	STATE m_StateOld;
 	bool m_EnterPls;
 	float m_StateTime = 0.0f;
-
-    public AudioClip Clip_Touch;
-    AudioSource AudioSource;
-
-
-    // Use this for initialization
-    void Start () {
+	// Use this for initialization
+	void Start () {
 		m_TitleChara = GameObject.Find(m_TitleCharaName);
-        AudioSource = gameObject.GetComponent<AudioSource>();
-
     }
-
-    // Update is called once per frame
-    void Update ()
+	
+	// Update is called once per frame
+	void Update ()
 	{
 		if (m_StateOld != m_State)
 		{
@@ -80,9 +73,7 @@ public class SceneCtrlTitle : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			this.m_State = STATE.MOVE;
-            AudioSource.clip = Clip_Touch;
-            AudioSource.Play();
-        }
+		}
 	}
 
 	void stMove()
