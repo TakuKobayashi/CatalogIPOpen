@@ -109,14 +109,14 @@ MonoBehaviour:
     scale: {x: .00499999989, y: .00499999989, z: .00499999989}
     target: {fileID: 0}
   - collision: {fileID: 11429702, guid: fdfa3d842b602044aa9314dc542a0c8f, type: 2}
-    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    position: {x: .189999998, y: 1, z: .100000001}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
-    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    scale: {x: .000767616613, y: .000767616613, z: .000767616613}
     target: {fileID: 0}
   - collision: {fileID: 11446702, guid: 0d3a7db35a352874f81abeb2de7e5796, type: 2}
-    position: {x: .189999998, y: -1.07000005, z: 1.13}
+    position: {x: .189999998, y: .976999998, z: .100000001}
     rotation: {x: -297.299988, y: -5.4000001, z: -23.7000008, w: 0}
-    scale: {x: .00499999989, y: .00499999989, z: .00499999989}
+    scale: {x: .00439943606, y: .00439943606, z: .00439943606}
     target: {fileID: 0}
   - collision: {fileID: 11439840, guid: f4cdfc0490aae514c9298d2814c61b64, type: 2}
     position: {x: .189999998, y: -1.07000005, z: 1.13}
