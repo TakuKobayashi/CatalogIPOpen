@@ -29,7 +29,12 @@ public class IngameController : SingletonBehaviour<IngameController>
 	public void Initialize()
 	{
 		GameObject go = Util.InstantiateTo (this.gameObject, timerCounter);
-		go.GetComponent<TimeCounter>().onComplete = onFinish;
+		TimeCounter tc = go.GetComponent<TimeCounter> ();
+		tc.onComplete = () => {
+			if (onFinish != null)
+				onFinish ();
+		};
+		tc.Inithialize ();
 
 		GameObject cgo = Util.InstantiateTo (this.gameObject, scoreCalculator);
 		calculator = cgo.GetComponent<ScoreCalculator>();
